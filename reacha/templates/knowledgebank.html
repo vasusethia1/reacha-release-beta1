@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+  <head>
+    <title>Reacha</title>
+  </head>
+  <body style="background:#f1efec;color:#404040;">
+  <style>
+    label {
+  color: #5d5dff;
+}
+#gallery {
+  color: white;
+}
+
+#gallery-box {
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+#gallery-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#gallery-box::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+#gallery-box::-webkit-scrollbar-thumb {
+  background: #5d5dff;
+}
+
+#gallery-box::-webkit-scrollbar-thumb:hover {
+  background: #7d7dff;
+}
+
+#gallery-count {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+}
+
+#gallery-img {
+  display: flex;
+  min-height: 400px;
+  min-width: 600px;
+  height: auto;
+  background: #e5e5e5;
+  text-align: center;
+  background-image: url("https://loremflickr.com/800/600/dog?lock=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white;
+}
+
+.gallery-thumbnails img {
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(1);
+  min-height: 25px;
+}
+
+.gallery-thumbnails img:hover {
+  filter: none !important;
+}
+     @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+
+  </style>
+
+  <div class="site-wrap">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="75" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+             
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> <span style="color:black;font-weight:bold;font-size:18px;">Home  </span> <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item" >
+                    <a class="nav-link" href="/about"> <span style="color:black;font-weight:bold;font-size:18px;">About Us  </span></a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="/covid19"> <span style="color:black;font-weight:bold;font-size:18px;">Covid 19</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Power Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices -  Project Samvedna</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood  Enhancement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilitation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion, Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/designimpactmovement">Design Impact Movement</a></li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Partners">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/Accreditions">Accreditation & Association</a></li>
+                        
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Advocacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Knowledge Bank
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/knowledgebank">Strategy for Counter Terrorism </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/garbagemanagement">Garbage Management</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/actionideas">Action Ideas</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Publications
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/Publications/panditsriramsharma">Pandit Shri Ram </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/beingdifferent">Being Different</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/adovacy/toolkit">Toolkit</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/media1">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/media3">Recognition</a></li>
+                        
+
+                       
+                    </ul>
+                </li>
+                
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/contact/volunteer">Volunteer</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/workwithus">Careers</a></li>
+                        <div class="dropdown-divider"></div>
+                         <li><a class="dropdown-item" href="/contact/engage">Engage</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact/partner">Partner</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/connect">Connect</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/strategy.png"  alt="First slide">
+    </div>
+</div>
+</div>
+</section>
+
+    <section>
+          <div class="container">
+              <div class="row justify-content-center"  style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">STRATEGY FOR <span style="color: white">COUNTER TERRORISM</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">The 26/11 INVASION OF INDIA by striking the economic capital of India was no ordinary terrorist attack but it gave a more definitive shape to the undeclared war on the people of India unleashed by the army of our neighbour since the last two decades. Having lost four frontal wars with the Indian army the Pakistan army could not be expected to venture into another frontal engagement with them & have therefore now intensified the 20 years' undeclared war on WE THE PEOPLE OF INDIA. How should WE THE PEOPLE OF INDIA face this menace? It is URGENT that WE THE PEOPLE acquire adequate CONSEQUENCE MANAGEMENT CAPABILITY at the earliest. The enemy cannot be expected to give up this mode of bleeding INDIA & we have to be prepared for many more such raids, specially now when instability is rocking Pakistan. Our brave army is fully competent to protect our borders but the rest of the country cannot be a silent witness to Mumbai (26/11) like raids.<br><br>
+
+An actual terrorist raid is seeing a mad man shooting from hip level usually within an angle of 30 degrees spraying bullets within this arc horizontally to achieve maximum casualties from the crowd facing him. If after the first few casualties the rest can either dash out from this angle of fire or fall down face downwards then the casualties could be minimized. But if they turn around & run then many would die due to stampede & many who are still within this angle of firing too would be killed. If there is a wall near by then some could hide behind it. The essence lies in somehow surviving the first burst of fire. This terrorist is no superman & is usually a half-trained militant & is also keen to get away as quickly as possible after inflicting maximum casualties. Very few are intent on suicide. The MEDIA is intent on blowing up the image of the terrorists which really helps them. IGNORE the MEDIA projections. What all are the essential steps in facing this sudden crisis:<br><br>
+
+(i) SAVE yourself & survive the first burst of fire as well as possible.<br> (ii) SAVE others by whatever means such as FIRST AID. <br>(iii) Minimize PANIC. <br> (iv) Minimize DAMAGE.<br> 
+(v) Inform the police; they are supposed to be your PROTECTORS OF FIRST RESORT. How well are they prepared? LIAISE with them in normal times so that they begin to get used to helping people. Inform the police of about any suspicious looking polythene packets.<br> (vi) Inform your family that you are SAFE.<br><br> 
+
+This CONSEQUENCE MANAGEMENT CAPABILITY has to be acquired between NOW & the NEXT TERRORIST RAID. This would involve the following steps:-<br><br>
+
+(i) AWARENESS GENERATION regarding need to be prepared in advance. Wherever people are alert terrorists avoid raiding. The PAMPHLET SAFE INDIA—-JODO BHARAT could be utilized by discussing the questions within families, in neighbourhoods & among small groups.<br><br>
+There are 40 questions carrying 5 marks each to judge HOW SAFE ARE WE? 20 questions are related to individual attitudes responsible for our dilemma today, 11 are relating to the state of GOVERNANCE in the country & 9 are related to social attitudes which have brought the country down in the last 60 years. This PAMPHLET is being also used for voter education.<br><br>
+
+(ii) COMMUNITY POLICING —liaise with your beat constable & organize MOHALLA COMMITTEES FOR SAFETY & SANITATION. Inform the police about any suspicious new arrivals in your area. Do ensure that garbage is not swept into the drains or burnt, the first responsible for URBAN FLOODS in the MONSOON SEASON & the latter one for severe ENVIRONMENTAL POLLUTION harmful to the protective OZONE LAYER & responsible for global warming.<br><br>
+
+(iii) Organize Training Camps for learning SURVIVAL SKILLS. Prepare small booklets on this subject with diagrams with the help of an EX-Serviceman. The series of articles of Lt. General (Retd) KK Khanna could also be utilized for this purpose.<br><br>
+
+(iv) Organize FIRST AID Training camps with the help of the RED CROSS. <br><br> (v) Organize training camps for training in minimizing PANIC & minimizing DAMAGE due to terrorist strikes at the time it takes place. This would require special skills & some local volunteers would have to be specially trained. If all these steps could be followed in every town in INDIA, then India could well become TERRORIST PROOF within 6 months.<br><br> 
+
+<span style="font-weight: 700;text-transform: uppercase;">Safe India Campaign pamphlet - What brought the country to a situation like 26/11? <a href="/static/docs/safeindiadoc.pdf" target="_blank"> Click to download (PDF1)</a></span><br><br> 
+<span style="font-weight: 700;text-transform: uppercase;">
+COUNTER TERRORISM FOR THE COMMON MAN – by Lt Gen (retd) K.K Khanna PVSM AVSM** (Former Commandant Indian Military Academy - IMA) - <a href="/static/docs/counterter.pdf"> Click to download (PDF2)</a><br><br>
+<span style="font-weight: 700;text-transform: uppercase;">
+HANDBOOK ON SECURITY FOR THE COMMON MAN - by Lt Gen (retd) K.K Khanna PVSM AVSM** (Former Commandant Indian Military Academy - IMA) - <a href="/static/docs/security.pdf"> Click to download (PDF3)</a><br><br>
+</p>
+</div>
+<div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 250px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Strategy for Counter Terrorism</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 5%;">1.Safe India Campaign pamphlet</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 5%;">2.COUNTER TERRORISM FOR THE COMMON MAN</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 5%;">3.HANDBOOK ON SECURITY FOR THE COMMON MAN</p>
+           </div>
+
+</span>
+</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background: #e6e8e2">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <center>
+        <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+        <p style="text-align:justify;">REACHA, or Research and Extension Association for Conservation Horticulture and Agro-forestry, is a Voluntary Organisation registered under the Societies Registration Act, 1860, within jurisdiction of NCT(National Capital Territory ) of Delhi, India since March 1992.<br><a href="/about">Read More</a></p></center>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="/">Home</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="/covid19">Covid19</a>
+            </p>
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            <p>
+              <a href="/media1">Media Coverage</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>177-178, 2nd Floor, 
+Triveni Apartments, 
+Jhilmil Colony, 
+Delhi 110095 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>nikhil@reacha.org</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 9811447613 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i>  011-22149730 </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+      <script src="/static/js/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

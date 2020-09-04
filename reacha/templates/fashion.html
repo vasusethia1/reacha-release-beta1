@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+
+    <title>Reacha</title>
+    
+    <style>
+       @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+       #custCarousel1 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel1 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel1 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel1 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel1 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+       #custCarousel2 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel2 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel2 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel2 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel2 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+</style>
+
+</head>
+
+
+<body style="background:#f1efec;color:#404040;">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+    <div class="site-wrap">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="75" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+             
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> <span style="color:black;font-weight:bold;font-size:18px;">Home  </span> <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item" >
+                    <a class="nav-link" href="/about"> <span style="color:black;font-weight:bold;font-size:18px;">About Us  </span></a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="/covid19"> <span style="color:black;font-weight:bold;font-size:18px;">Covid 19</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Power Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices -  Project Samvedna</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood  Enhancement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilitation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion, Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/designimpactmovement">Design Impact Movement</a></li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Partners">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/Accreditions">Accreditation & Association</a></li>
+                        
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Advocacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Knowledge Bank
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/knowledgebank">Strategy for Counter Terrorism </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/garbagemanagement">Garbage Management</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/actionideas">Action Ideas</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Publications
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/Publications/panditsriramsharma">Pandit Shri Ram </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/beingdifferent">Being Different</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/adovacy/toolkit">Toolkit</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/media1">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/media3">Recognition</a></li>
+                        
+
+                       
+                    </ul>
+                </li>
+                
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/contact/volunteer">Volunteer</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/workwithus">Careers</a></li>
+                        <div class="dropdown-divider"></div>
+                         <li><a class="dropdown-item" href="/contact/engage">Engage</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact/partner">Partner</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/connect">Connect</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/Simple Work Blog Banner (11).png"  alt="First slide">
+        
+    </div>
+</div>
+</div>
+</section>
+    <section>
+ 
+              <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;text-align:justify;">
+                  Operation Sadhbhavana is a development initiative by Indian Army - a non-kinetic effort to mainstream youth in Kashmir by engaging them in constructive activities. One of the key efforts under Sadhbhavana is livelihood enhancement of local communities through Skill Development courses like Fashion Designing, Retail and Hospitality - in alignment with market requirements, so that the youth get an opportunity to enhance their family incomes. This not only empowers them but can also dissuade them from anti - national activities like stone pelting and insurgency - a major national and global challenge. If the young have choices to decide their future, they are likely to adopt those activities / vocations that not only provide them livelihood, but also keeps them and their families safe and out of conflict. Success of peaceful efforts like these can provide a proof of concept for larger policy and action on how to move towards resolution of civil strife and insurgency.<br><br>
+
+ 
+
+REACHA is the Implementation Agency / NGO of the project at Chinar 9 Jawan Club, Baramulla, under overall supervision of Indian army. ONGC has provided support through its CSR (Corporate Social Responsibility) programme. This is a flagship initiative under Operation Sadhbhavana.<br><br>
+
+ 
+
+Since April 2016, 240 youth in Fashion Designing (ASSOCHAM Certification), 450 youth in Retail Management (NSDC Certification) and 450 youth in Hospitality (NSDC Certification) trades have been trained at the Club. Overall, about 60-70% youth trained have been able to enhance their livelihood - through jobs, and/or by setting up their own boutiques/entrepreneurship ventures.<br><br> 
+
+ 
+                </p>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 200px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">About The Project</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Gallery</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Video Library</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Case Studies</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Testimonial</p>
+             
+           
+         
+             
+
+          </div>
+        </div>
+<div class="row justify-content-center" style="padding-bottom: 2%;" data-aos="fade-left">
+<div class="col-md-8 col-lg-8 justify-content-center">
+    <center>
+<img src="/static/images/fashionabt.png" style="border-radius: 10px;border:2px solid black;" class="img-fluid">
+<img src="/static/images/picawardfd.jpg" style="border-radius: 10px;border:2px solid black;margin-top:4%;" class="img-fluid">
+</center>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-10">
+<p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;border-top:2px solid black;text-align: justify;">Some eye-opening stories have now begun to come out of Chinar - these can inspire a nation to look for medium to long term solutions for resolving the Kashmir crisis. <br><br> 
+
+ 
+"After class 12th, one of my teachers recommended me to join the Chinar 9 Jawan Club. I have always been keen on learning fashion designing and starting my own business. The teachers and staff at the Club were very helpful. Our teacher, Mrs. Harmeet Kaur was very motivating, and she guided us with patience and diligence. Moreover, we were taught computers and English-speaking skills to later become entrepreneurs. After the 6-month training, I opened my own enterprise - 'Khadija Boutique' in the market. It has been two years since then. I started it single handedly and today I work and teach 5-6 other girls who want to earn their own money and be independent. I trained them for free and then hired them to work for me. Now they support their families financially and love their work. I have many clients from my village and nearby places. Everyone knows me in the market. My parents are also happy and proud of my efforts. My gain is much larger than my investment. Not only did I learn to make clothes, but I am also gaining an understanding about how to be a business woman. I dream to bring together more women and girls who wish to be independent. I want to teach them this skill and give them wings to fly. Today, we work as a 5 people team, I dream of making a team of 50 tomorrow and 100 later. I hope one day I can expand my business to other states and then to other countries. I want to bring out the beauty of Kashmir fabric and embroidery to the world. I work tirelessly with the entire team to make clothes for our customers. I wish to learn strategies to expand my business through social media. I have come so far, and I wish to go beyond. " Shafia (Fashion and design student from Chinar 9 Jawan Club)   
+<br>
+</p>
+</div>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 2%;margin-top: 2%;" data-aos="fade-left">
+<div class="col-md-5 col-lg-5 justify-content-center">
+<center>
+<img src="/static/images/fashionabt2.png" style="border-radius: 10px;border:2px solid black;" class="img-fluid">
+</center>
+</div>
+<div class="col-md-5 col-lg-5 justify-content-center">
+    <center>
+<img src="/static/images/fashionabt3.png"  style="border-radius: 10px;border:2px solid black;" class="img-fluid">
+</center>
+</div>
+
+</div>
+<div class="row justify-content-center" data-aos="fade-left" style="margin-bottom: 1%;padding-top: 2%;">
+  <div class="col-lg-10 col-md-10">
+    <center>
+    <img src="/static/images/fashionabt5.png" style="border-radius: 10px;border:2px solid black;" >
+</center>
+</div>
+</div>
+
+ 
+
+
+
+</div>
+</div>
+    </section>
+ <style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:2px;
+    height:2px;
+}
+
+</style>
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background: #e6e8e2">
+      <h1 style="font-size:2.5rem;padding-top: 2%;color: black">GALLERY</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/fashiong1.jpg" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/gallfashion.JPG" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/classroom1.JPG" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/classroom3.JPG" style="width:385px;height:auto;">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/fdcounselling1.jpg" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/counselling1.jpeg" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/armyint1.JPG" style="width:385px;height:auto;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/armyint2.jpg" style="width:385px;height:auto;">
+            </div>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="fas fa-chevron-circle-left" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="fas fa-chevron-circle-right" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--<section style="background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url('/static/images/fashionabt5.jpg');background-repeat: no-repeat;background-size: cover;background-position: top;background-attachment: fixed;">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class='col-md-6 col-lg-6 col-sm-12' style="padding-top: 3%;">-->
+<!--  <h1 style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Gallery: Fashion Designing</h1>-->
+<!--<div class="container12" style="padding-top: 3%;">-->
+<!--&lt;!&ndash; Flickity HTML init &ndash;&gt;-->
+<!--<div class="carousel carousel-main" data-flickity='{"pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong1.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong2.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong4.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong5.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong6.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong7.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong8.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashion9.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashion10.jpeg"/></div>  -->
+<!--</div>-->
+
+<!--<div class="carousel carousel-nav"-->
+<!--  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong1.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong2.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong4.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong5.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong6.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong7.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashiong8.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashion9.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fashion10.jpeg"/></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<div class='col-md-6 col-lg-6 col-sm-12' style="padding-top: 3%;">-->
+<!--  <h1 style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Gallery: Classroom Teaching</h1>-->
+<!--<div class="container12" style="padding-top: 3%;">-->
+<!--&lt;!&ndash; Flickity HTML init &ndash;&gt;-->
+<!--<div class="carousel carousel-main1" data-flickity='{"pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom1.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom4.JPG"/></div>-->
+<!--</div>-->
+
+<!--<div class="carousel carousel-nav"-->
+<!--  data-flickity='{ "asNavFor": ".carousel-main1", "contain": true, "pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom1.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/classroom4.jpg"/></div>-->
+<!--  -->
+<!--</div>-->
+
+<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class='col-md-6 col-lg-6 col-sm-12' style="padding-top: 3%;">-->
+<!--  <h1 style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Gallery: Counseling</h1>-->
+<!--<div class="container12" style="padding-top: 3%;">-->
+<!--&lt;!&ndash; Flickity HTML init &ndash;&gt;-->
+<!--<div class="carousel carousel-main3" data-flickity='{"pageDots": false }'>-->
+<!--  <div class="carousel-cell" style="height: 400px;"><img style="height: 400px;" src="/static/images/fdcounselling1.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling4.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling5.jpeg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling6.JPG"/></div> -->
+<!--</div>-->
+
+<!--<div class="carousel carousel-nav"-->
+<!--  data-flickity='{ "asNavFor": ".carousel-main3", "contain": true, "pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling1.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling3.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling4.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling5.jpeg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/fdcounselling6.JPG"/></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<div class='col-md-6 col-lg-6 col-sm-12' style="padding-top: 3%;">-->
+<!--  <h1 style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Gallery: Army Interaction</h1>-->
+<!--<div class="container12" style="padding-top: 3%;">-->
+<!--&lt;!&ndash; Flickity HTML init &ndash;&gt;-->
+<!--<div class="carousel carousel-main4" data-flickity='{"pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint1.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint3.jpeg"/></div>-->
+<!--</div>-->
+
+<!--<div class="carousel carousel-nav"-->
+<!--  data-flickity='{ "asNavFor": ".carousel-main4", "contain": true, "pageDots": false }'>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint1.JPG"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint2.jpg"/></div>-->
+<!--  <div class="carousel-cell"><img class="img-fluid" src="/static/images/armyint3.jpeg"/></div>-->
+<!--  -->
+<!--</div>-->
+
+<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<section >
+  <h1 style="font-size:2.5rem;color:black;padding-top: 2%;"><span style="text-transform:uppercase;color:#70b6bc;" >VIDEO</span> LIBRARY</h1>
+
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="row" style="padding-top: 2%;">
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://youtube.com/embed/1Km88tRWwcU"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+<center>
+    <a><img class="img-fluid z-depth-1" src="/static/docs/snapshot.jpg" style="padding-bottom:2%;"alt="video"
+        data-toggle="modal" data-target="#modal2"><br><button class="btn btn-rounded btn-warning" data-toggle="modal" data-target="#modal2">Play Video 1</button></a></center>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-4 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://youtube.com/embed/JjJrNpcsMGk"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+    <a><img class="img-fluid " style="padding-bottom:2%;" src="/static/docs/snapshot3.jpg" alt="video"
+        data-toggle="modal" data-target="#modal5"><br><button   data-toggle="modal" data-target="#modal5"  class="btn btn-rounded btn-warning">Play Video 2</button></a></center>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://youtube.com/embed/GCQeuapb-J4"                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+<center>
+    <a><img class="img-fluid " style="padding-bottom:2%;" src="/static/docs/snapshot4.jpg" alt="video"
+        data-toggle="modal" data-target="#modal3"><br><button   data-toggle="modal" data-target="#modal3"  class="btn btn-rounded btn-warning">Play Video 3</button></a></center>
+
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+  </div>
+</section>
+
+<section style="background:#e6e8e2">
+    <h1 style="font-size:2.5rem;text-transform:uppercase;padding-top: 2%;">CASE STUDIES <span style="text-transform:uppercase;color:#70b6bc;">(FASHION DESIGNING)</span></h1>
+  <div class="flex-container" >
+    <div class="row" style="width: 98%;margin-left: 1%;">
+      <div class="col-lg-6 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px">
+       
+        
+         <span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;"> Name:</span> Iqra Mehraj <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Age:</span> 19 years <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Education:</span>10th pass <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Batch:</span> 2nd 2019 <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Domain:</span> Cutting & Sewing <br><br>
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Family Background:</span>
+
+I Iqra Mehraj, D/O Gulam Ahmad Wani, R/O Rangwar Baramulla belong to a poor family. My family is based on 07 members including my parents, 03 sisters & 02 brothers. My father is a  farmer , my mother a housewife and my siblings are studying.<br><br> 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Before Training:</span><span style="text-align: justify;">
+ Before training I was hopeless what to do to regulate my family, how to support my siblings  in studies etc. Then I came to know about the courses offered in chinar 9 jawan club where I Choose “Cutting and  Tailoring” as my vocational domain, because this was the only course which could help me in getting stand on my feet. As I am not much qualified I prefer to choose the said vocational course.     </span>   <br>  <br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">During Training:</span>
+<span style="text-align: justify;">
+During training I learnt so many things related to the field of “Cutting and Tailoring”. I came to know different sewing techniques. I also got reasonable command over the stitching and over multiple designing techniques. I also learnt  how to cut, stitch, assemble and prepare a beautiful suit. I am highly thankful to my Trainers, Indian Army, ONGC& REACHA who gave me the beautiful opportunity to lead my life in a proper way.</span> <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">After Training:</span>
+<spam style="text-align: justify;">
+After getting 6 months of vocational training in “ Cutting and Tailoring” I feel blessed that I am in that position where I can earn a handsome sum. I am in that position where I am getting orders from different people for stitching and designing. I have opened my own shop at my home where I am earning as much that I can support my family.</span> <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Support during Covid Pandemic: </span>
+<span style="text-align: justify;">
+During the situation of Covid Pandemic, I used to prepare protective face masks to donate and retail for having running atmosphere and distribute it among the community. I believe in keeping myself open for the support of society and for developing myself, reimagining the future for the better and stable tomorrow.</span> 
+        </p>
+      </div>
+      <div class="col-lg-5 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px;">
+        
+       <span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Name: </span>Aamina Ayoob<br><br> 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Age:</span> 18 years<br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Education:</span> B.A <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Batch:</span> 2nd 2019<br> <br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Domain:</span>Fashion Designing <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Family Background:</span>
+
+I Aamina Ayoob D/O Mohammad Ayoob R/O Delina Baramulla   belong to a poor family. We are 5 family members including me, my parents & 2 brothers. My brothers are studying and my mother is a housewife.<br><br> 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Before Training:</span>
+
+ Before training I was hopeless what to do & how to lead my life in a proper way, how to support my siblings  in studies etc. As I am well qualified but still unemployed.  Then I came to know about the courses offered in chinar 9 jawan club where I Choose “Fashion Designinig” as my vocational domain, because this was the only course which could help me in getting my earning.<br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">During  Training:</span>
+
+During training I learnt so many things about “Fashion Designing”. I came to know different designing techniques. I also got reasonable command over hand Embroidery, Tie & Dye, Fabric painting, etc  . I also learnt  how to cut, stitch, assemble and prepare a beautiful suit. I am highly thankful to my Trainers, Indian Army, ONGC & REACHA who gave me the beautiful opportunity to lead my life in a proper way.<br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">After Training:</span>
+
+After getting 6 months of vocational training in “ Fashion Designing” I feel blessed that I am in that position where I can earn a handsome sum.  I am getting orders from different people for stitching and designing different kinds of suits.  During Covid-19 pandemic, I used to do tailoring at my home where I am earning as much that I can support my family. I am also planning to open a Boutique after lockdown. <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Support During Covid-19:</span>
+
+As we all know the repercussions of the novel Coronavirus pandemic is shaking up the whole world, this phase which can last for months and years poses unprecedented economic and social damage for global industries. Retail and manufacturing industries world wide are amongst the worst hit with companies going bankrupt and shutting stores almost overnight. Is such scenario, Fashion is the last thing on people’s mind right now. During this pandemic situation, I used to prepare masks for free to donate in my locality. After that I got orders from neighbouring villages through Auqaaf committees and prepared around 400 masks till and I am doing it continuously and donating it on dail basis as wearing masks have become necessary throughout the country. Parallelly  I am also stitching suits and trying not to get my work effected due to Covid-19.</p>
+      </div>
+
+    </div>
+<div class="row" style="width: 98%;margin-left: 1%;">
+      <div class="col-lg-6 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px">
+        
+      <span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">
+          Name: </span> Shabroza Akhter<br><br>                                                  
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Age:</span> 20 years<br>   <br>                                                   
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Education: </span>12th <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Batch:</span> 2nd 2019<br> <br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Domain: </span> Fashion Designing <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Family Background:</span>
+
+I Shabroza Akhter, D/O Ghulam Mohi-Ud-Din Najar R/O Ijara Boniyar, which is 35 kms away from Chinar 9Jawan Club  belong to a  family where we are 7 family members including me, my parents  & 2 brothers & 2 sisters . My father is not able to earn due to health issues and my mother is a housewife. <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Before Training: </span> 
+
+ Before training I was confused & hopeless   how to lead my life in a proper way. As I am well qualified but still unemployed.  Then I came to know about the courses offered in chinar 9 jawan club where I Choose “Fashion Designing” as my vocational domain. <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">During  Training:</span>
+
+During training I learnt so many things about “Fashion Designing”. I came to know different designing techniques. I also got reasonable command over hand Embroidery, Tie & Dye, Fabric painting, etc  . I also learnthow to cut, stitch, assemble and prepare a beautiful suit. I am highly thankful to my Trainers, Indian Army, ONGC & REACHA who gave me the beautiful opportunity to lead my life in a proper way. <br><br> 
+
+ 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">After Training:</span>
+
+After getting 6 months of vocational training in “ Fashion Designing” I got the opportunity to explore my skills and I am in that position where I am able to stand take on my own feet..  I am getting orders from different people for hand embroidery of  different kinds of suits. I used to do hand embroidery at my home where I am earning as much that I am highly satisfied at the beginning. <br> <br>
+
+ 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Support During Covid </span> Pandemic: 
+
+During the World pandemic situation of Covid 19, everyone was frightened and under stress and I was also confused how to earn and how to support as we were going through financial crisis. Then our Chinar Faculty called me and took review of the situation, they motivated me to get up and show support to family and the whole community. REACHA, ONGC also supported us through Indian Army by providing food packets and necessary items in this intense situation. Then, I talked to village community head and other assistants , they provided me the material and I prepared 300 masks and then it was distributed among the people and I also earned a handsome amount. I also used to motivate and cousel my local people which were in my contact with the help of Chinar Faculty who were guiding us continuously and in this we are winning the battle against Covid 19.
+My sincere gratitude towards Chinar team, Indian Army, REACHA, ONGC for upbringing and supporting us. 
+        </p>
+      </div>
+      <div class="col-lg-5 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px;">
+        
+    <span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Name:</span> Parveena Bano <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Age:</span> 19 years <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Education:</span> 9th pass <br><br>
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Batch:</span> 2nd 2019 <br><br>
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Domain:</span> Cutting Sewing <br><br>
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Family Background:</span> 
+
+I come from Kanlibagh Baramulla  & I  belong to a very poor family. My family is based on 05 members including my mother, me, 2 sisters & 1 brother. I have lost my father at a very early age, my mother is a housewife and my siblings are studying. <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Before Training: </span> 
+ Before training I was hopeless what to do to regulate my family, how to support my siblings  in studies etc. as my family was going through a major financial crisis. Then I came to know about the courses offered in Chinar 9Jawan Club when the Faculty came for mobilization to our area , after which I joined Chinar where I choose “Cutting and  Tailoring” as my vocational domain, because this was the only course which could help me in getting stand on my feet.  <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">During  Training: </span> 
+
+During the training of 06 months, I learnt so many things related to the field of “Cutting and Tailoring”. I came to know different sewing techniques. I also got reasonable command over the stitching and over multiple designing techniques. I also learnt  how to cut, stitch, assemble and prepare a beautiful suit. As our training was almost complete, lockdown started, where I started  working at home.  <br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">After Training:</span>
+
+After getting 6 months of vocational training in “ Cutting and Tailoring” I feel blessed that I am in that position where I can earn a handsome sum. I am in that position where I am getting orders from different people for stitching and designing. I am working at my home where I am earning as much that I can support my family as well as lead my life independently.<br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Support during Covid-19:</span>
+
+As our training was almost complete, lockdown started, where I started  working at home. During tough times of Covid-19, it was very tough time for my family as well as for everyone. Firstly, I started preparing protective face masks for my locality .I nearly earn 4500 per month which is a boon to my family in this hour of need. During lockdown, I also stitched the suits of some brides, where I worked very hard and helped them as well as supported my family during these tough times.  
+
+I am highly thankful to my Trainers, Indian Army, ONGC & REACHA who gave me the beautiful opportunity to lead my life in a proper way, and especially for making me able to generate income for my helpless family.</p>
+      </div>
+
+    </div>
+    
+      
+     
+    </div>
+</section>
+<section style="background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url('/static/images/fashionbg2.JPG');background-repeat: no-repeat;background-size: cover;background-position: top;background-attachment: fixed;">
+  <div class="container" style="padding-top: 2%;">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-10 justify-content-center">
+                  <h1><span style="color: black;padding-top:3%;font-size:2.5rem;"> TESTIMONIALS <span style="text-transform:uppercase;color:#70b6bc;">(FASHION DESIGNING)</span></h1>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 3%;padding-bottom: 5%;">
+
+  <!-- Grid column -->
+  <div class="col-lg-3 col-md-4 ml-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+               <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 15%;" src="/static/images/fashiont1.jpg"
+              ></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/fashiont1.jpg" target="_blank" style="color:black;">Download</a></button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div id="modal-style" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/fashiont1.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat; justify-content: center;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal1">Testomonial 1</p></div>
+</center>
+  </div>
+  <!-- Grid column -->
+
+
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+    <div class="col-lg-3 col-md-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+              <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 15%;" src="/static/images/fashiont2.jpg"
+              ></iframe>
+
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/fashiont2.jpg" target="_blank" style="color:black;">Download</a></button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/fashiont2.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal3">Testomonial 2</p></div></center>
+
+  </div>
+
+  <!-- Grid column -->
+  <div class="col-lg-3 col-md-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+              <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 15%;" src="/static/images/fashiont3.jpeg"
+              ></iframe>
+
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/fashiont3.jpeg" target="_blank" style="color:black;">Download</a></button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/fashiont3.jpeg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal4">Testomonial 3</p></div></center>
+
+  </div>
+  </div>
+</div>
+</section>
+<section >
+  <div class="container" style="padding-top: 2%;">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-12 justify-content-center">
+                  <h1><span style="color: black;padding-top:3%;font-size:2.5rem;"> TESTIMONIALS <span style="text-transform:uppercase;color:#70b6bc;">(HOSPITALITY AND RETAIL)</span></h1>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 3%;padding-bottom: 5%;">
+
+  <!-- Grid column -->
+  <div class="col-lg-3 col-md-3 ml-4  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal41" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+               <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 15%;" src="/static/images/hrt1.jpg"
+              ></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/hrt1.jpg" target="_blank" style="color:black;">Download</a></button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div id="modal-style" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/hrt1.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat; justify-content: center;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal41">Testomonial 1</p></div>
+</center>
+  </div>
+  <!-- Grid column -->
+
+
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+    <div class="col-lg-3 col-md-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+              <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 8%;" src="/static/images/hrt2.jpg"
+              ></iframe>
+
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/hrt2.jpg" target="_blank" style="color:black;">Download</a></button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/hrt2.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal5">Testomonial 2</p></div></center>
+
+  </div>
+
+  <!-- Grid column -->
+  <div class="col-lg-3 col-md-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal4h" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+              <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-left: 15%;" src="/static/images/hrt3.jpg"
+              ></iframe>
+
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/hrt3.jpg" target="_blank" style="color:black;">Download</a></button>
+
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/hrt3.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal4h">Testomonial 3</p></div></center>
+
+  </div>
+  <div class="col-lg-3 col-md-3 ml-3  mx-auto">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-1by1 z-depth-1-half img-fluid">
+               <iframe  class="embed-responsive-item text-center" style="width:100%;justify-content: center;margin-top: 5%;margin-left: 15%;" src="/static/images/hrt4.jpg"
+              ></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4" style="font-family: Nuntino;font-weight: bold;">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning ml-4" ><a href="/static/images/hrt4.jpg" target="_blank" style="color:black;">Download</a></button>
+
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+    <center>
+     <div id="modal-style" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/hrt4.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat; justify-content: center;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal12">Testomonial 4</p></div>
+</center>
+  </div>
+  </div>
+</div>
+</section>
+
+
+
+</div>
+
+      </div>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background: #e6e8e2">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <center>
+        <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+        <p style="text-align:justify;">REACHA, or Research and Extension Association for Conservation Horticulture and Agro-forestry, is a Voluntary Organisation registered under the Societies Registration Act, 1860, within jurisdiction of NCT(National Capital Territory ) of Delhi, India since March 1992.<br><a href="/about">Read More</a></p></center>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="/">Home</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="/covid19">Covid19</a>
+            </p>
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            <p>
+              <a href="/media1">Media Coverage</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>177-178, 2nd Floor, 
+Triveni Apartments, 
+Jhilmil Colony, 
+Delhi 110095 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>nikhil@reacha.org</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 9811447613 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i>  011-22149730 </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

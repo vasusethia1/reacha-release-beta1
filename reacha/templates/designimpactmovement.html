@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+
+    <title>Reacha</title>
+    
+    <style>
+       @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+       #custCarousel1 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel1 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel1 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel1 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel1 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+       #custCarousel2 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel2 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel2 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel2 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel2 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+</style>
+
+</head>
+
+
+<body style="background:#f1efec;color:#404040;">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+    <div class="site-wrap">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="75" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+             
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> <span style="color:black;font-weight:bold;font-size:18px;">Home  </span> <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item" >
+                    <a class="nav-link" href="/about"> <span style="color:black;font-weight:bold;font-size:18px;">About Us  </span></a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="/covid19"> <span style="color:black;font-weight:bold;font-size:18px;">Covid 19</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Power Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices -  Project Samvedna</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood  Enhancement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilitation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion, Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/designimpactmovement">Design Impact Movement</a></li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Partners">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/Accreditions">Accreditation & Association</a></li>
+                        
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Advocacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Knowledge Bank
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/knowledgebank">Strategy for Counter Terrorism </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/garbagemanagement">Garbage Management</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/actionideas">Action Ideas</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Publications
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/Publications/panditsriramsharma">Pandit Shri Ram </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/beingdifferent">Being Different</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/adovacy/toolkit">Toolkit</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/media1">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/media3">Recognition</a></li>
+                        
+
+                       
+                    </ul>
+                </li>
+                
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/contact/volunteer">Volunteer</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/workwithus">Careers</a></li>
+                        <div class="dropdown-divider"></div>
+                         <li><a class="dropdown-item" href="/contact/engage">Engage</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact/partner">Partner</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/connect">Connect</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/design.png"  alt="First slide">
+        
+    </div>
+</div>
+</div>
+</section>
+    <section>
+ 
+              <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;text-align:justify;">
+                  Titan Company Limited is launching a program called Design Impact Movement with REACHA as the primary partner. This movement seeks to help aspiring innovators amongst the country’s youth reach their potential while also giving back to the society. It intends to inspire young<br><br>
+people to take up designing for social impact and help them in the creation of their products for the same, if any. 
+<br><br>
+The Project aims at creating an awareness for and promoting tangible design innovations that solve pressing social issues and provide an ecosystem which connects all the entities in the product design space from the problem source to the public. <br><br>
+
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">Strengthening the Design Impact Awards:</span><br><br>
+The engagement is a natural evolution of the Design Impact Awards <a href="https://designimpactawards.in" target="_blank">(https://designimpactawards.in/)</a> program from supporting grantees who are creating product designs for social impact to inspiring more young minds to design for social impact This will further strengthen the Awards in future editions, both with the number and the quality of participation through direct outreach of the Movement and the public recall of the brand.<br><br> 
+
+
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 1st September 2020</span><br><br> 
+ 
+                </p>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 200px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">About The Project</p>
+  
+             
+           
+         
+             
+
+          </div>
+        </div>
+<div class="row justify-content-center" style="padding-bottom: 2%;" data-aos="fade-left">
+<div class="col-md-8 col-lg-8 justify-content-center">
+   
+<img src="/static/images/design.jpg" style="border-radius: 10px;border:2px solid black;" class="img-fluid">
+
+</div>
+</div>
+<div class="row justify-content-center"  data-aos="fade-left" style="padding: 10px">
+    <div class="col-md-10 col-lg-10 col-sm-10">
+                  <p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;border-top:2px solid black;text-align: justify;"><span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">Building an Ecosystem:</span><br><br> 
+There are multiple stakeholders who need to be involved in the journey of an innovator from community connects and subject matter experts to maker-spaces and manufacturing spaces to incubators and funders. The movement would seek to build and strengthen the ecosystem which connects all the different entities in the design impact space.<br><br> 
+
+**In light of the above, REACHA invites ‘Expression of Interest (EoI)’ / applications from interested parties / individuals as the case may be:<br><br>
+ <span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">1) Agency for Design & Implementation:</span><br><br>
+
+For support in the design and implementation of Design Impact: Movement, a flagship CSR initiative of Titan Company Ltd. The agency is expected to provide strategic inputs and advisory support to ensure the accomplishment of programme objectives and desired milestones.** <br><br>
+To download the EoI ZIP Folder - <a href="http://www.reacha.org/local--files/titan-csr-projects/DI%20MOVEMEMT%20-%20EOI%20-%201.zip"> CLICK HERE</a> <br><br>
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 1st September 2020</span><br><br>
+
+<span style="font-weight:700">Application submission date has been extended to 5pm on 8th September 2020</span><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">2) Production Lead - Masterclasses:</span><br><br>
+
+REACHA is looking to hire a production lead who can help produce and edit educational videos for the Design Impact Movement’s tech platform (Masterclass series). The Masterclass series aims to engage and enable student participants on the platform, to learn from subject matter experts (hereinafter referred as SMEs) on a range of topics centered around “designing for social impact”, keeping in mind the Indian context. The production lead on-boarded will be required to plan each production phase and produce high quality videos for the Masterclass series.<br><br>
+<span style="font-weight:700">Production Lead - Masterclasses is a Contractual position for a period of 4 months - September 2020 to December 2020<br><br>
+
+Selection is through Walk-in Online interview during the period - 27 August 2020 - 1 September 2020<br><br>
+To download the Job Description (JD) -</span><a href="http://www.reacha.org/local--files/titan-csr-projects/JD_Production%20Lead_Masterclass.pdf"> CLICK HERE</a><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">3) Creative Team:</span><br><br>
+
+REACHA is looking for an agency to help with the promotional creative content generation for the Design Impact initiative’s social media handles and web-based Tech Platform. The agency’s key role is to ensure that the content on the website and social media sites are of high quality, consistent and representative of the Design Impact: Movement until the program launch. The objective is to increase engagement and awareness around the program to make the path to social impact designing more accessible and inclusive.<br><br>
+<span style="font-weight:700">To download the EoI ZIP Folder -</span><a href="http://www.reacha.org/local--files/titan-csr-projects/DI%20MOVEMENT%20-%20EOI%20-%202.zip"> CLICK HERE</a> <br><br>
+
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 10th September 2020</span> 
+
+
+
+
+</div>
+</p>
+</div>
+</div>
+</div>
+</section>
+
+      <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background: #e6e8e2">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <center>
+        <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+        <p style="text-align:justify;">REACHA, or Research and Extension Association for Conservation Horticulture and Agro-forestry, is a Voluntary Organisation registered under the Societies Registration Act, 1860, within jurisdiction of NCT(National Capital Territory ) of Delhi, India since March 1992.<br><a href="/about">Read More</a></p></center>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="/">Home</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="/covid19">Covid19</a>
+            </p>
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            <p>
+              <a href="/media1">Media Coverage</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>177-178, 2nd Floor, 
+Triveni Apartments, 
+Jhilmil Colony, 
+Delhi 110095 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>nikhil@reacha.org</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 9811447613 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i>  011-22149730 </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Faithful &mdash; Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    
+  </head>
+  <body>
+  <style>
+    label {
+  color: #5d5dff;
+}
+
+#gallery {
+  color: white;
+}
+
+#gallery-box {
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+#gallery-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#gallery-box::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+#gallery-box::-webkit-scrollbar-thumb {
+  background: #5d5dff;
+}
+
+#gallery-box::-webkit-scrollbar-thumb:hover {
+  background: #7d7dff;
+}
+
+#gallery-count {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+}
+
+#gallery-img {
+  display: flex;
+  min-height: 400px;
+  min-width: 600px;
+  height: auto;
+  background: #e5e5e5;
+  text-align: center;
+  background-image: url("https://loremflickr.com/800/600/dog?lock=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white;
+}
+
+.gallery-thumbnails img {
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(1);
+  min-height: 25px;
+}
+
+.gallery-thumbnails img:hover {
+  filter: none !important;
+}
+
+      #grid {
+    position: relative;
+    }
+      .full {
+    width: 100%;
+    float: left;
+    }
+      #grid:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #333030;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 0;
+    z-index: 1;
+    }
+  #grid .button {
+    margin: 40px auto 0 auto;
+    }
+      .button.green {
+    background: #72dbb0;
+    border-color: #72dbb0;
+    }
+      a:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
+      @media only screen and (min-width: 768px) {
+        .button {
+          font-size: 0.9em;
+        }
+      }
+      .button {
+        display: table;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 200px;
+        line-height: normal;
+        font-weight: 700;
+        border: 3px solid #50d7e6;
+        transition: all, 0.3s;
+      }
+      .button:hover{
+        background-color: white;
+      }
+      .button:hover{
+        color: #72dbb0;
+      }
+  </style>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+     <div class="site-navbar-wrap js-site-navbar bg-white">
+
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <img class="mb-0 site-logo" src="/static/images/REACHA%20HIGH%20RESOLUTION%20LOGO1.png" style="width:100px; height:150px;margin-left: 20%;">
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <!-- d-lg-none -->
+                    <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                     <!-- d-lg-block -->
+                    <ul class="site-menu js-clone-nav d-none">
+                      <li class="has-children">
+                        <a href="/about">About</a>
+                        <!--<ul class="dropdown arrow-top">
+                          <li><a href="/History">History</a> </li>
+                          <li><a href="/vision">Vision</a></li>
+                          <li><a href="/Mission">Mission</a></li>
+                          <li><a href="/methodology">Methodology</a></li>
+                          <li><a href="/Team">Team</a></li>
+                          <li><a href="beliefs.html">Geographies</a></li>
+                          <li><a href="beliefs.html">Annual Reports</a></li>
+                        </ul>-->
+                      </li>
+                       <li class="has-children">
+                        <a href="About.html">Projects</a>
+                        <ul class="dropdown arrow-top">
+                          <li class="has-children">
+                          <a href="beliefs.html">Education</a>
+                          <ul class="dropdown arrow-top">
+                            <li><a href="/project/education/rec">REC - Project Learn</a></li>
+                              <li><a href="/project/education/villagesports">Village & Sports</a></li>
+                               <li><a href="/project/education/ndpl">NDPL Power Club</a></li>
+                              <li><a href="/project/education/tatapowerenergyclub">Tata Energy Project Club</a></li>
+                              <li><a href="/project/education/sameerclub">Sameer Club</a></li>
+                              <li><a href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                              <li><a href="/project/education/tatatelservices">Tata Teleservices</a></li>
+
+                          </ul>
+                        </ul>
+                        <ul class="dropdown arrow-top">
+                          <li class="has-children">
+                          <a href="beliefs.html">Livelihood</a>
+                          <ul class="dropdown arrow-top">
+                              <li><a href="/project/livelihood/legenpact">Livelihood Enhancement</a></li>
+                            <li><a href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                              <li><a href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                             <li><a href="/project/livelihood/urirehabilation">Uri Rehabilation</a></li>
+                              <li><a href="/project/livelihood/fashion">Fashion,Retail & Hospitality</a></li>
+
+                          </ul>
+                        </ul>
+                        <ul class="dropdown arrow-top">
+                          <li class="has-children">
+                          <a href="beliefs.html">Design Impact Movement</a>
+                          <ul class="dropdown arrow-top">
+                              <li><a href="/project/education/legenpact">Livelihood Enhancement</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="dropdown arrow-top">
+                          <li class="has-children">
+                          <a href="/project/kojo">Kojo For Education & Livelihood</a>
+                        </ul>
+                      </li>
+                        <li class="has-children">
+                        <a href="About.html">Stakeholders</a>
+                        <ul class="dropdown arrow-top">
+                            <li><a href="/Partners">Partners</a></li>
+                          <li><a href="/Accreditions">Association</a></li>
+                          <li><a href="/Accreditions">Accrediations</a></li>
+                        </ul>
+                      </li>
+                        <li class="has-children">
+                        <a href="About.html">Adovacy</a>
+                          <ul class="dropdown arrow-top">
+                             <li><a href="/knowledge">Knowlege Bank</a></li>
+                          
+                          <li class="has-children">
+                          <a href="beliefs.html">Publication</a>
+                          <ul class="dropdown arrow-top">
+                              <li><a href="/Publications/panditsriramsharma">Pandit Sriram Sharma</a></li>
+                            <li><a href="/Publications/beingdifferent">Being Different</a></li>
+                              <li><a href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                            
+
+                          </ul>
+                          <li><a href="/advocacy/toolkit">Toolkit</a></li>
+
+                        </ul>
+                        <li class="has-children">
+                        <a href="About.html">Media&Gallery</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="beliefs.html">Press Releases</a></li>
+                          <li><a href="beliefs.html">Awards</a></li>
+                          <li><a href="beliefs.html">Galley</a></li>
+                        </ul>
+                      </li>
+                        <li class="has-children">
+                        <a href="About.html">Contact Us</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="/Volunteer">Volunteer</a></li>
+                          <li><a href="beliefs.html">Address</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="slide-one-item home-slider owl-carousel">
+
+      <div class="site-blocks-cover overlay img-fluid" style=" background-image: url(/static/images/musicab3.jpeg);background-position: center;" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12 text-center" data-aos="fade">
+              <h1 class="mb-2" style="color: white;font-family: Nunito;font-weight: bold">CULTURE AND MUSIC</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <section style="background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url('/static/images/musicc.jpeg');background-repeat: no-repeat;background-size: cover;background-position: top;background-attachment: fixed;">
+          <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top:3%;" >
+                  <h1 style="font-family: Nunito">ABOUT<span style="color: mediumseagreen;margin-top:3%;"> THE PROJECT</span></h1>
+              </div>
+              <div class="row justify-content-center" data-aos="fade-right" style="border: 2px solid black;padding: 10px">
+                <p data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">
+                  Project Title: Education programme for youth: Inculcation of Cultural Values/ Enrichment and Personality Development of 60 nos. Kashmiri youth   
+<br>
+ 
+
+Project Goal: Constructive engagement with youth of Baramulla through education of art/music/culture – to give them a voice/expression, de-stress them and encourage them towards positive & healthy life<br>
+Objectives: <br>
+          <ul>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide a platform for local youth to showcase their hidden talent in music</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide basic training of 6 months to local youth on different musical instruments.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide opportunities for local aspiring singers</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To promote Kashmiri Sufi Music which is based on peace and brotherhood – develop this further to strengthen efforts at counterinsurgency through peaceful means.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide a source of entertainment for local youth to avoid their involvement in subversive activities like stone pelting and drug addiction.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To promote cultural values among younger generation of Kashmiris.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide martial arts training to youth to constructively channelize their energies.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide soft skills in English – for overall personality development.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">Utilizing music/art/culture for de-stressing the youth and taking them away from mental health disorder situations.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;"> Explore opportunities for incremental livelihood enhancement of youth based on above.</li>
+          </ul> 
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <p style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;" data-aos="fade-left">
+    Target Beneficiaries and Area covered: Youth in district Baramulla through intervention at the existing Chinar 9 Jawan Club <br>
+
+ 
+
+Target Beneficiaries: 60 nos. in 2 nos. batches of 30 nos. each. Batch duration = 6 months.
+  </p>
+  </div>
+</div>
+<div class="row" style="padding-bottom: 2%;">
+<div class="col-md-6 col-lg-6">
+<img src="/static/images/musicab1.JPG" class="img-fluid">
+</div>
+<div class="col-lg-6 col-md-6">
+  <img src="/static/images/musicab3.jpeg" class="img-fluid">
+</div>
+</div>
+
+<p style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;" data-aos="fade-right">The armed conflict in Kashmir valley has led to demise and displacement of people, destruction of infrastructure, and crumbling of support systems, etc. The general consequences of armed conflict in Kashmir (which started in 1947) are strife, death, loss of security and livelihood, disrupted schooling, displacement, and the like. Every section in the society has been gravely affected. The impact of this social-economic dynamics has been devastating, putting into challenge survival, development, health, and overall well-being of Kashmiri communities across the valley. Since 1989 when armed conflict started in the valley, property worth hundreds of thousands of crores has been destroyed.  
+<br>
+ 
+
+This has led to social disorder, disorganization, educational backwardness, physical and mental health deterioration, mass psychological depression, helplessness and an overall degenerated of cultural moorings. The conflict has resulted in loss of a significant number of people. According to conservative official estimates nearly 90000 people have been killed since 1989, however unofficial estimates put the figure around 125,000 (half of them were civilians). Death of any individual due to the conflict creates a huge survival challenge to the entire family - socially as well as economically.  Most alarming aspect of the conflict is that prominent victims of violence during the last two decades have been the youth. They are targets, perpetrators as well as survivors of conflict. As their childhood was lost in the incidents of armed conflict, they could not be socialized in the proper cultural and religious ethos of Kashmir – often referred to as Kashmiriat. During the last two decades the Kashmir society has scattered, leaving children either orphaned or as half orphans. The loss of a family member has generated several problems which manifests practically in many ways in day to day life of the survivors. More commonly the widows are under psychology stress and economically dependent on the labour of their children, who are often unemployed. 
+<br>
+ 
+
+Kashmir Mental Survey 2015 conducted by Médecins Sans Frontières in collaboration with Institute of Mental Health and Neurosciences, Kashmir and Kashmir University has done a commendable job in this direction. The survey has been conducted in all the districts of Kashmir Valley, focusing mainly on most prevalent disorders like depression, anxiety disorders, and post-traumatic stress disorder. Despite a limitation of use of only screening tools in the estimation of the prevalence of these disorders, the findings confirm a serious mental health situation, with highly prevalent common mental disorders and distress having continued to increase to reach epidemic levels among the traumatized population of Kashmir, with 37% of adult males and 50% of females suffering from probable depression; 21% of males and 36% of females from a probable anxiety related disorder and 18% men and 22% women suffering from probable PTSD. 
+<br>
+ 
+
+One hopes and expects that these disturbing survey findings are sufficient enough to jolt all stakeholders from complacency and make them join hands to mobilise all possible government as well as community resources to handle the emergency situation and try to develop and strengthen comprehensive policies for promotion of mental health as well as evidence based efficient innovative programs for prevention, early identification, care and support to the people with mental disorders and their families in Kashmir. 
+<br>
+ 
+
+The last 30 years turmoil has not only killed humans but has also devastated and almost destroyed art, culture, and music in the valley. Almost all main sources of entertainment were restricted or blocked by terrorists or militancy linked separatist groups. Many prominent faces of culture and music were also lost in between the sounds of bullets and bombs. With the passage of time people became addicted to drugs due to the prevailing depressing scenario. Due to increasing level of stress and anxiety the population of drug addicts, especially the young, has been increasing to an alarming level day by day. Activities of destruction (stone pelting, protests etc.) are now being chosen as tools of entertainment and stress relieving in Kashmir.  
+
+<br> 
+
+To engage the local youth in music, art and culture is basically an attempt to provide them sources of entertainment and keep them away from subversive and anti-social activities. It has been observed that whenever Kashmiri youth gets a chance, they possess enough talent to excel in the arts. This is likely to also help them de-stress and overcome the widely prevalent mental health disorders in the region.  
+
+<br>
+
+Talented youth is being sent out online / offline for competitions, professionally performing at festivals/occasions/functions, and some of them would soon also be encouraged to become trainers, based on their talent, commitment, and aptitude. Thus, incremental livelihood enhancement opportunities are being explored. 
+
+<br> 
+
+The youth is also provided soft skills in English to further groom their personality. Computer training is also given to provide them IT enabled skills that are of use everywhere in today’s world. 
+<br>
+ 
+
+Aim of this project is not only to provide local youth opportunities of entertainment and de-stressing but is also to help in promotion of local music (Sufi music). Aim is to train 60 male and female candidates on different instruments of music and provide them wings to fly as well. Opportunities for incremental livelihood enhancement would also be explored by developing a Chinar Music Group to perform professionally at functions, events, and festivals in the area. Individual talent will also be promoted for the same.  
+<br>
+
+This initiative of Indian army with the support of ONGC has started a new beginning of promotion of art and culture in Baramulla district of the Jammu and Kashmir State. 
+
+</p>
+
+</div>
+</div>
+
+
+        </section> 
+
+<section>
+  <h1 style="font-family: Nunito;padding-top:3%;"><span style="color: mediumseagreen;">GALLERY</span></h1>
+  <!--Controls-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" style="padding-left:50%;"data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc.jpeg" height="270"  alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc1.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc2.jpeg" height="270"alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc3.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item text-center">
+ 
+      <div class="col-md-3 col-lg-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc4.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc5.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc6.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicc7.JPG" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item text-center">
+ 
+      <div class="col-md-3 col-lg-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicp1.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicp2.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicp3.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="/static/images/musicp4.jpeg" height="270" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">Card title</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>  
+</section>
+<section>
+  <div class="flex-container"style="background: linear-gradient(rgba(0,0,0,0.9),rgba(76,76,76,0.9)),url('/static/images/musicc8.jpeg'); background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center;" >
+    <div class="row" style="width: 100%;">
+      <div class="col-lg-6 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px">
+        <h1  style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Case Study 1</h1>
+
+        <img data-aos="fade-right" src="/static/images/musicp3.jpeg" style="width:200px;height: 300px;justify-content: center;margin-left: 35%;">
+        <p data-aos="fade-right" style="color:white;font-family: Nunito;font-size: 21.5px;">Belonging to a common middle class family from sopore town of baramulla, Jasir is a student of class 12. Having keen interest in music, he along with his studies, decided to join the Chinar 9 jawan club and learn tabla. He soon became an expert in playing percussion instruments and impressed everyone in class. 
+
+His talent got huge appreciation when the band performed their first show at Skicc Srinagar. On 25th April, Jasir’s video was uploaded on a Facebook page of Tariq Rasool (trainer of art and culture), and the video in no time spread like wildfire.  
+
+Tariq Rasool soon got a call from the valley’s most famous Sufi musical group, Jhankaar, and they seeked information about Jasir.  
+
+Jasir was called to their office where he played tabla and mesmerized everyone. Soon after, he received a call to play table with the valley’s most illustrated Sufi singer, Sopore. He accompanied Mr Shafi Sopore in a live musical show conducted by a channel from Pune (platform light music).  
+
+Finally, all the efforts of Jasir led him to receive a contract of 3 years from the Jhankar musical group. He could finally turn his hobby into a profession now.  
+
+This was a huge achievement for Jasir as well as the Chinar 9 jawan club.  </p>
+      </div>
+      <div class="col-lg-5 col-xl-6 col-mg-6" style="border: 2px solid black;padding: 10px;">
+        <h1  style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Case Study 2</h1>
+        <img data-aos="fade-right" src="/static/images/musicp2.jpeg" style="width:200px;height: 300px;margin-left:35%;">
+        <p data-aos="fade-right" style="color:white;font-family: Nunito;font-size: 21.5px;">Nadeem Bashir, S/o Bashir ah dar is a native of Fatehpora barramula.  
+
+He belongs to a middle class family where his father is the sole earning member working as a class fourth government employee.  
+
+Nadeem was fond of music since childhood and would sing at various occasions in his school as well. With time, his desire to learn music grew but he was unable to find a trainer in the area.  
+
+His hunt for a trainer finally ended in January 2020 when he found about the music project started by Chinar 9 jawan club. He joined the project and worked hard under the supervision of Tariq Rasool who is a faculty of art and culture project there. 
+
+Nadeem gained recognition when on 24th April 2020, he participated in a talent hunt program organised by the J&K police at Sherwani hall, Baramullah, and stood at 2nd position among 15 other contestants. There the in-charge of a police musical band asked him to join his band and he finally got a job of SPO at J&K police.</p>
+      </div>
+
+    </div>
+    
+      
+     
+    </div>
+</section>
+</div>
+
+    <footer class="site-footer" style="background-image: url('images/hero_1.jpg');">
+      <div class="container">
+        
+
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="footer-heading mb-4 text-white">About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
+            <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Bible Study</a></li>
+                    <li><a href="#">Church</a></li>
+                    <li><a href="#">Missionaries</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-2">
+            <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
+              <div class="col-md-12">
+                <p>
+                  <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                  <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/jquery-ui.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/jquery.countdown.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+
+  
+  <script src="/static/js/mediaelement-and-player.min.js"></script>
+
+  <script src="/static/js/main.js"></script>
+ 
+
+  </script>
+   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

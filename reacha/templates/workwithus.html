@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+  <head>
+    <title>Reacha</title>
+  </head>
+  <body style="background:#f1efec;color:#404040;">
+  <style>
+    label {
+  color: #5d5dff;
+}
+#gallery {
+  color: white;
+}
+
+#gallery-box {
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+#gallery-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#gallery-box::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+#gallery-box::-webkit-scrollbar-thumb {
+  background: #5d5dff;
+}
+
+#gallery-box::-webkit-scrollbar-thumb:hover {
+  background: #7d7dff;
+}
+
+#gallery-count {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+}
+
+#gallery-img {
+  display: flex;
+  min-height: 400px;
+  min-width: 600px;
+  height: auto;
+  background: #e5e5e5;
+  text-align: center;
+  background-image: url("https://loremflickr.com/800/600/dog?lock=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white;
+}
+
+.gallery-thumbnails img {
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(1);
+  min-height: 25px;
+}
+
+.gallery-thumbnails img:hover {
+  filter: none !important;
+}
+     @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+
+  </style>
+  <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Nunito"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-family: Nunito;font-color: rgba(108, 122, 137, 1);font-size:18px;">As students enter college life a new world opens out to them - new campus, subjects, teachers, friends ……….. the list is endless.
+
+More often than not the child of yesteryear now begins a life of confusion, dilemmas and contradictions. Peer pressure, mounting parental expectation and the media/info blitzkrieg begin to take their toll straight away. A good way to positively divert this young mind is through college volunteering.
+
+Students are involved in projects/programmes to 'give back' to the society - to 'make a difference.'
+
+REACHA seeks to involve college students through field volunteering as well as e-volunteering (whereby students can volunteer for us right from their homes, college hostels, institutes etc) in:
+
+· doing online research for preparing content for our ongoing projects
+
+· volunteer to help us conduct the LIVE workshops
+
+· engage in meaningful 'peer group mentoring' of school children involved in our programmes - through online forums as well as counseling workshops in schools and colleges
+
+· getting involved in any of our on-going programmes. Do check out the side navigation links on this site for more information Those interested may fill the online form here
+
+Members are requested to adhere to the REACHA Code of Conduct while volunteering, which is as follows:
+
+CODE OF CONDUCT FOR REACHA VOLUNTEERS (Individuals/Forums/Organizations
+
+Volunteering for REACHA is by choice.
+
+REACHA volunteers should strive to share their time and talent for taking up issues of local, regional and national concerns in tune with their bent of mind, in a spirit of camaraderie and social cohesion.
+
+REACHA volunteers should be interested in 'reaching out' through maitreya (friendliness) to make a 'positive difference' in their home, colleges & neighbourhood.
+
+Each volunteer should seek to observe a 'felt need' around them which requires intervention. Solutions to this need may be many, with some of them having already been worked out, & under implementation, elsewhere.
+
+REACHA volunteers should seek to be positive and pro-active towards various issues, and expend less time and energy in being critical and obstructive to various activities of the organization or any other.
+
+REACHA volunteers should always uphold national interest first in all their deliberations.
+
+REACHA volunteers should seek to be co-operative to the efforts of other volunteers in the organisation. Constructive criticism is welcome, but frivolous debate and discussion should be avoided by one and all.
+
+REACHA volunteers must understand that there is always an excuse for not doing something. If they are really passionate about an issue then it is entirely up to them to take charge of that issue and then develop it accordingly.
+
+REACHA volunteers should strictly adhere to time schedules committed by them. Volunteers should strive to deliver whatever promised at least one day prior to the scheduled date in order to make a statement about REACHA’s commitment towards its objectives.
+
+REACHA volunteers should appreciate that every other volunteer is just as busy and occupied as they are. Thus, each volunteer should follow basic norms of consideration for others to the best of their capability.
+
+REACHA volunteers should not expect any personal benefits from their volunteering for the association. Rather, they would strive to give to the association whatever best they can as conscientious Indian citizens.
+
+REACHA volunteers should not commit more than they are capable of delivering.
+
+REACHA volunteers can make a choice of either contributing to ongoing projects/debates/discussions undertaken by the organization or be part of new start-up projects/debates/discussions under support & guidance from senior REACHA activists.
+
+REACHA volunteers should not seek any personal favors from any individual or organization in the course of the fulfillment of their commitments. Benefits that may accrue as a by-product to constructive synergies are welcome.
+
+REACHA volunteers should always seek to adopt the most economical and frugal practices/methodologies in their work, and in the setting up and running of their forums/groups etc.
+
+REACHA volunteers should not seek publicity for their work. They should follow the dictum – ‘real work speaks for itself.’
+
+REACHA volunteers should always remain transparent in their activities and documentation work – in spirit as well as action.
+
+REACHA volunteers should remain committed to the overall objectives of the organisation in the true spirit of volunteerism and social commitment in their spare time, to pursue their societal commitments.
+
+REACHA would strive to function as a facilitator par excellence and would encourage networking of all like-minded individuals/youth forums/NGOs/Corporates/Govt in the true spirit of ‘open source’ knowledge sharing.
+
+Successful volunteering stints will be awarded Volunteering Participation Certificates/Letters. Outstanding efforts will be rewarded with Volunteering Merit Certificates/Letters.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Nunito"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-family: Nunito;font-color: rgba(108, 122, 137, 1);font-size:18px;">Corporate India is doing well - really well today!!
+
+Corporate Social Responsibility is a buzzword in many a corridors of power at corporate centers. However, many do not know how to get started. In many ways - even though the intent is there - the corporate entity is unable to pitch in for various reasons.
+
+Khoj seeks such conscientious corporates as well as their executives through:
+
+· Corporate volunteering - online as well as during LIVE KHOJ
+
+· Sharing their expert advice with us to strengthen the programme - through time and space
+
+· Supporting the venture - we hope to sponsor the Monthly Khoj Quiz - as well as partnering us during LIVE KHOJ
+
+Khoj seeks to involve corporate and government executives through field volunteering as well as e-volunteering (whereby they can volunteer for us right from their homes, offices etc) in:
+
+· doing online research for preparing the monthly khoj quiz
+
+· volunteer to help us conduct the LIVE KHOJ workshops
+
+· engage in meaningful 'peer group mentoring' of school children involved in the onlineKHOJ programme - through online forums as well as counseling workshop in schools and colleges
+
+· getting involved in any of our on-going programmes. Do check out the side navigation links on this site for more information Those interested may fill the online form here
+
+Members are requested to adhere to the REACHA Code of Conduct while volunteering, which is as follows:
+
+CODE OF CONDUCT FOR REACHA VOLUNTEERS (Individuals/Forums/Organizations
+
+Volunteering for REACHA is by choice.
+
+REACHA volunteers should strive to share their time and talent for taking up issues of local, regional and national concerns in tune with their bent of mind, in a spirit of camaraderie and social cohesion.
+
+REACHA volunteers should be interested in 'reaching out' through maitreya (friendliness) to make a 'positive difference' in their home, colleges & neighbourhood.
+
+Each volunteer should seek to observe a 'felt need' around them which requires intervention. Solutions to this need may be many, with some of them having already been worked out, & under implementation, elsewhere.
+
+REACHA volunteers should seek to be positive and pro-active towards various issues, and expend less time and energy in being critical and obstructive to various activities of the organization or any other.
+
+REACHA volunteers should always uphold national interest first in all their deliberations.
+
+REACHA volunteers should seek to be co-operative to the efforts of other volunteers in the organisation. Constructive criticism is welcome, but frivolous debate and discussion should be avoided by one and all.
+
+REACHA volunteers must understand that there is always an excuse for not doing something. If they are really passionate about an issue then it is entirely up to them to take charge of that issue and then develop it accordingly.
+
+REACHA volunteers should strictly adhere to time schedules committed by them. Volunteers should strive to deliver whatever promised at least one day prior to the scheduled date in order to make a statement about REACHA’s commitment towards its objectives.
+
+REACHA volunteers should appreciate that every other volunteer is just as busy and occupied as they are. Thus, each volunteer should follow basic norms of consideration for others to the best of their capability.
+
+REACHA volunteers should not expect any personal benefits from their volunteering for the association. Rather, they would strive to give to the association whatever best they can as conscientious Indian citizens.
+
+REACHA volunteers should not commit more than they are capable of delivering.
+
+REACHA volunteers can make a choice of either contributing to ongoing projects/debates/discussions undertaken by the organization or be part of new start-up projects/debates/discussions under support & guidance from senior REACHA activists.
+
+REACHA volunteers should not seek any personal favors from any individual or organization in the course of the fulfillment of their commitments. Benefits that may accrue as a by-product to constructive synergies are welcome.
+
+REACHA volunteers should always seek to adopt the most economical and frugal practices/methodologies in their work, and in the setting up and running of their forums/groups etc.
+
+REACHA volunteers should not seek publicity for their work. They should follow the dictum – ‘real work speaks for itself.’
+
+REACHA volunteers should always remain transparent in their activities and documentation work – in spirit as well as action.
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Nunito"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-family: Nunito;font-color: rgba(108, 122, 137, 1);font-size:18px;">Members are requested to adhere to the REACHA Code of Conduct while volunteering, which is as follows:<br>
+
+CODE OF CONDUCT FOR REACHA VOLUNTEERS (Individuals/Forums/Organizations) <br>
+
+Volunteering for REACHA is by choice.<br>
+
+REACHA volunteers should strive to share their time and talent for taking up issues of local, regional and national concerns in tune with their bent of mind, in a spirit of camaraderie and social cohesion.<br>
+
+REACHA volunteers should be interested in 'reaching out' through maitreya (friendliness) to make a 'positive difference' in their home, colleges & neighbourhood.<br>
+
+Each volunteer should seek to observe a 'felt need' around them which requires intervention. Solutions to this need may be many, with some of them having already been worked out, & under implementation, elsewhere.<br>
+
+REACHA volunteers should seek to be positive and pro-active towards various issues, and expend less time and energy in being critical and obstructive to various activities of the organization or any other.<br>
+
+REACHA volunteers should always uphold national interest first in all their deliberations.<br>
+
+REACHA volunteers should seek to be co-operative to the efforts of other volunteers in the organisation. Constructive criticism is welcome, but frivolous debate and discussion should be avoided by one and all.<br>
+
+REACHA volunteers must understand that there is always an excuse for not doing something. If they are really passionate about an issue then it is entirely up to them to take charge of that issue and then develop it accordingly.
+<br>
+REACHA volunteers should strictly adhere to time schedules committed by them. Volunteers should strive to deliver whatever promised at least one day prior to the scheduled date in order to make a statement about REACHA’s commitment towards its objectives.<br>
+
+REACHA volunteers should appreciate that every other volunteer is just as busy and occupied as they are. Thus, each volunteer should follow basic norms of consideration for others to the best of their capability.<br>
+
+REACHA volunteers should not expect any personal benefits from their volunteering for the association. Rather, they would strive to give to the association whatever best they can as conscientious Indian citizens.<br>
+
+REACHA volunteers should not commit more than they are capable of delivering.<br>
+
+REACHA volunteers can make a choice of either contributing to ongoing projects/debates/discussions undertaken by the organization or be part of new start-up projects/debates/discussions under support & guidance from senior REACHA activists.<br>
+
+REACHA volunteers should not seek any personal favors from any individual or organization in the course of the fulfillment of their commitments. Benefits that may accrue as a by-product to constructive synergies are welcome.<br>
+
+REACHA volunteers should always seek to adopt the most economical and frugal practices/methodologies in their work, and in the setting up and running of their forums/groups etc.<br>
+
+REACHA volunteers should not seek publicity for their work. They should follow the dictum – ‘real work speaks for itself.’<br>
+
+REACHA volunteers should always remain transparent in their activities and documentation work – in spirit as well as action.<br>
+
+REACHA volunteers should remain committed to the overall objectives of the organisation in the true spirit of volunteerism and social commitment in their spare time, to pursue their societal commitments.<br>
+
+REACHA would strive to function as a facilitator par excellence and would encourage networking of all like-minded individuals/youth forums/NGOs/Corporates/Govt in the true spirit of ‘open source’ knowledge sharing.<br>
+
+Successful volunteering stints will be awarded Volunteering Certificates.
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="site-wrap">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="75" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+             
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> <span style="color:black;font-weight:bold;font-size:18px;">Home  </span> <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item" >
+                    <a class="nav-link" href="/about"> <span style="color:black;font-weight:bold;font-size:18px;">About Us  </span></a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="/covid19"> <span style="color:black;font-weight:bold;font-size:18px;">Covid 19</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Power Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices -  Project Samvedna</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood  Enhancement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilitation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion, Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/designimpactmovement">Design Impact Movement</a></li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Partners">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/Accreditions">Accreditation & Association</a></li>
+                        
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Advocacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Knowledge Bank
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/knowledgebank">Strategy for Counter Terrorism </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/garbagemanagement">Garbage Management</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/actionideas">Action Ideas</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Publications
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/Publications/panditsriramsharma">Pandit Shri Ram </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/beingdifferent">Being Different</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/adovacy/toolkit">Toolkit</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/media1">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/media3">Recognition</a></li>
+                        
+
+                       
+                    </ul>
+                </li>
+                
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/contact/volunteer">Volunteer</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/workwithus">Careers</a></li>
+                        <div class="dropdown-divider"></div>
+                         <li><a class="dropdown-item" href="/contact/engage">Engage</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact/partner">Partner</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/connect">Connect</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/contactus.png"  alt="First slide">
+       
+    </div>
+</div>
+</div>
+</section>
+    <section>
+          <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">WORK WITH <span style="color: white">US</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify">REACHA welcomes passionate, driven individuals to come be part of our “journey with purpose.” Our team members not only work to serve and make a difference to communities and the environment, but also engage with their colleagues in a process of dynamic learning, sharing, and self-discovery. If you feel aligned to our values and actions, please drop an email to <span style="color:#70b6bc">nikhil@reacha.org</span> with the following:
+<ol>
+ <li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;">Cover letter of not more than 1 page, clearly stating:
+<ul>
+ <li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;">
+Your drive, mission, or sense of purpose in life</li>
+
+<li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;">Why you feel REACHA can be the right place for you to be in</li>
+
+
+<li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;"> What value add would you like to bring for our learning</li>
+</ul>
+</li>
+<li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;">
+
+Your Resume</li>
+</p>
+
+</div>
+<div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 100px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Work With us</p>
+             
+           </div>
+      </span>
+    </p>
+  </div>
+  </div>
+</section>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background: #e6e8e2">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <center>
+        <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+        <p style="text-align:justify;">REACHA, or Research and Extension Association for Conservation Horticulture and Agro-forestry, is a Voluntary Organisation registered under the Societies Registration Act, 1860, within jurisdiction of NCT(National Capital Territory ) of Delhi, India since March 1992.<br><a href="/about">Read More</a></p></center>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="/">Home</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="/covid19">Covid19</a>
+            </p>
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            <p>
+              <a href="/media1">Media Coverage</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>177-178, 2nd Floor, 
+Triveni Apartments, 
+Jhilmil Colony, 
+Delhi 110095 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>nikhil@reacha.org</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 9811447613 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i>  011-22149730 </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+      <script src="/static/js/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

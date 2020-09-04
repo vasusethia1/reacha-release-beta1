@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+
+    <title>Reacha</title>
+    <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4">
+    <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4">
+    <style>
+       @media screen and (max-width: 1920px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+     
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+    
+</style>
+
+</head>
+
+
+<body style="background:#f1efec;color:#404040;">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+    <div class="site-wrap">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="75" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+             
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> <span style="color:black;font-weight:bold;font-size:18px;">Home  </span> <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item" >
+                    <a class="nav-link" href="/about"> <span style="color:black;font-weight:bold;font-size:18px;">About Us  </span></a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="/covid19"> <span style="color:black;font-weight:bold;font-size:18px;">Covid 19</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Power Energy Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices -  Project Samvedna</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood  Enhancement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilitation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion, Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/designimpactmovement">Design Impact Movement</a></li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Partners">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/Accreditions">Accreditation & Association</a></li>
+                        
+                    </ul>
+                </li>
+                
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Advocacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Knowledge Bank
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/knowledgebank">Strategy for Counter Terrorism </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/garbagemanagement">Garbage Management</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/knowledgebank/actionideas">Action Ideas</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Publications
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/Publications/panditsriramsharma">Pandit Shri Ram </a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/beingdifferent">Being Different</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/Publications/batforallseason">Bat For All Seasons</a></li>
+                                          
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/adovacy/toolkit">Toolkit</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/media1">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/media3">Recognition</a></li>
+                        
+
+                       
+                    </ul>
+                </li>
+                
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/contact/volunteer">Volunteer</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/workwithus">Careers</a></li>
+                        <div class="dropdown-divider"></div>
+                         <li><a class="dropdown-item" href="/contact/engage">Engage</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact/partner">Partner</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/contact/connect">Connect</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/partners_cover.png"  alt="First slide">
+    </div>
+</div>
+</div>
+</section>
+
+
+
+    
+    <section>
+          <div class="container">
+            <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">INDIAN <span style="color:white">ARMY</h1></span></h1>
+              </div>
+          </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-sm-2 col-md-2">
+                            <img src="/static/images/ARMY_Logo.jpg" class="img-fluid" style="margin-top: 15%;border: 0.5px solid black">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 2%;">
+                  <div class="col-lg-8 col-md-8">
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">
+                        REACHA partnership with Indian Army has had a transformational impact towards countering anti-national militant activities in Baramulla since the youth have been provided a constructive means to divert their energies. <br><br>
+                        The Indian Army has been very active in promoting and running various developmental initiatives in the Kashmir Valley. These efforts are being manifested through a well-developed and regulated project called ‘Operation Sadhbhavana’.<br><br> 
+
+ 
+
+The various programmes being run under Sadhbhavana are aimed at Education, Skill Development, Health Care, Environment Conservation, Infrastructure Development and Sporting Events, wherein the holistic development of the local populace of Kashmir Valley is being undertaken to wean them away from terrorism, drug menace and anit-national activities. While the Army has the necessary infrastructure, outreach and management skills for undertaking these tasks, the long-term sustainability of these ventures remains an issue. As part of Operation Sadbhavana Army has taken up a special initiative for the constructive engagement of the youth of the Valley so as to dissuade them from getting involved in the vicious circle of Drugs, Stone Pelting and Anti National activities by establishing a skill development centre in the form of Chinar 9 Jawan Club at Baramulla District. The Club affords an ideal platform for the youth to interact, relax and rejuvenate, while also develop their skills for holistic growth, in a stress-free environment<br><br>
+</p>
+</div>
+<div class="col-lg-2 col-sm-2 col-md-2">
+                    <div style="background: white;height: 550px;">
+
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;padding-top: 15px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">Indian Army</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">ONGC</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">Genpact and Nasscom Foundation</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">Rec Foundation</p>
+              
+               <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">Titan</p>
+                <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">IBM</p>
+                 <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">SMARTGAON FOUNDATION</p>
+                 <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;padding-left: 3%;">Institutional Partners</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 9%;">1.Manav Bharti India International School</p> 
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 9%;">2.Delhi Public School, Amritsar</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 10px;padding-left: 9%;">3.Durga Dutt Modi Foundation</p>
+
+
+         
+             
+
+          </div>
+      </div>
+</div>
+<div class="row justify-content-center" data-aos="fade-right">
+<div class="col-lg-10 col-md-10">
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">
+
+The Club offers a number of Recreational and Informational Avenues in terms of an eight Terminal High Speed Internet Cafes’, a well-stocked Reference Library (500 books), a Modern Multi Station Outdoor Gymnasium, Indoor Games to include Pool, Table Tennis, Carom Board, Chess and Darts and Outdoor Games facilities like Basketball, Badminton and also a Mixed Martial Arts Arena. In addition to this, a fast food joint along with a gifts gallery has also been set up for the youth to enable them to spend their leisure time in a positive manner.<br><br> 
+
+ 
+
+Besides catering to the recreational needs, the Indian Army in collaboration with REACHA since April 2016 has given a platform to youth of Baramulla in the form of Chinar 9 Jawan Club where students can come from different socio- economic backgrounds and take benefit of job oriented and entrepreneurship training so as to give wings to the aspirational needs of the youth through the medium of Skill Development in identified fields like Basic Computer and Information Training, Fashion Designing, Retail and Hospitality Services, Sales Executive Training, Music and Culture, Life Skills, Spoken English - provided at zero cost to the local youth.<br><br>  
+
+ 
+
+Since 2016 more than 1000 youth have been trained at the Chinar 9 Jawan Club, Baramulla, with 60-70% getting jobs/livelihood enhancement post the trainings.<br><br>
+
+ 
+
+Since July 2019 about 1200 youth have been provided basic level drug de-addiction at the Center being run in Army campus by REACHA. The youth are then motivated to join various trainings at Chinar 9 Jawan Club as per their talent and aspirations.<br><br>  
+
+ 
+
+
+           
+
+
+</p>  
+          </div>
+
+          
+         
+  </div>
+          
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ONGC </span></h1>
+          </div>
+          </div>
+           <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 2%;">
+                  <div class="col-lg-8 col-md-8" style="font-family: Nunito;">
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align:justify">REACHA has been supported by ONGC in its partnership with Indian Army at Baramulla, Kashmir. The projects underway include skill development trainings and drug de-addiction. These are undertaken within army campus of 19 Arty Brigade at Baramulla. The training centre is called the Chinar 9 Jawan Club, Baramulla. The concept of the Club was initiated by the army to ‘constructively engage’ with youth in the valley so as to peacefully wean them away from militancy, drug addiction, anti-national activities etc., and to enable them to meaningfully contribute to national development.<br><br>
+
+The partnership between ONGC, Indian Army & REACHA began in the year 2016 with ONGC supporting a total of 60 girls for 2 batches of 6 months each, on Fashion Designing, Cutting & Sewing Course. This course is certified by ASSOCHAM. Till date 240 young women have undergone this training with more than 60% engaged in livelihood enhancement activities post the training. Since 2017-18, 150 youth each year have been trained in trades of Retail and Hospitality with NSDC certification – totalling overall 900 numbers. Here too, despite numerous challenges 50-60% placements / livelihood enhancement has been achieved.<br><br>
+
+Since 2019-20 we have also started training 60 youth a year on music to provide innovative incremental livelihood enhancement opportunities to the youth.</p>
+                      </div>
+                  <div class="col-lg-2 col-sm-2 col-md-2">
+                    
+                      <img src="/static/images/1200px-ONGC_Logo.png" class="img-fluid" style="margin-top: 15%;border: 2px solid black;border-radius: 10px;">
+                  </div>
+              </div>
+              <div class="row justify-content-center"  data-aos="fade-left">
+                  <div class="col-lg-10 col-md-10" style="font-family: Nunito;">
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify">The project is quite popular and during times of Covid-19 lockdown, our young musicians have provided soothing and melodious music calling upon the community to maintain social distance and other Covid-19 Combat requirements. Since 2019-20, we are also working to provide drug-de-addiction and rehab support to 1200 Kashmiri youth who are often targets of drugs to misguide them. With ONGC support houses of villagers broken down due to counterinsurgency operations were rebuilt in Uri by REACHA in the year 2017-18. This bridged the divide and brought local village communities close to the army near LoC with Pakistan. Also, Porta Cabins have been installed with ONGC support at Chinar 9 Jawan Club and Drug De-addiction Center to augment existing infrastructure, ensuring better services. Since March/April 2020, with nationwide lockdown imposed by government, ONGC projects have shifted to online mode using WhatsApp, GOTO-Meeting Apps, tele-calling etc. even though internet in Kashmir is terribly slow due to security reasons. The progress has been lauded by Army and it feels that this effort under extremely difficult times will go a long way to strengthen our efforts to bring peace in the valley. ONGC support to REACHA for the above projects have provided tremendous encouragement, support, and high impact to Army efforts to counter militancy in a peaceful manner. As per Army, Baramulla has today become much less prone to stone pelting, terror attacks and other anti-national activities since most of the youth look forward to enhancing their career prospects at ONGC supported initiatives, thereby mainstreaming themselves into the national fabric</p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">Read more about our projects with ONGC support at -</p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">1. <a href="/project/livelihood/fashion" target="_blank">Fashion, Retail & Hospitality</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">2. <a href="/project/livelihood/urirehabilation" target="_blank">Uri Rehabilitation Projects</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">3. <a href="/project/livelihood/drugde" target="_blank"> Drug De-Addiction Center</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">4. <a href="/project/livelihood/musicandculture" target="_blank">Music And Culture</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;">Read more about ONGC CSR at <a href="https://www.ongcindia.com/wps/wcm/connect/en/csr/major-csrprojects/" target="_blank">https://www.ongcindia.com/wps/wcm/connect/en/csr/major-csrprojects/</a></p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section style="background: #e6e8e2">
+          <div class="container">
+            <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">GENPACT AND <span style="color:white">NASSCOM</h1></span></h1>
+              </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 2%;" >
+                  <div class="col-lg-8 col-md-8">
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">REACHA partnership started with Genpact through NASSCOM (NF) Foundation in the year 2018. With their support, and under Army supervision, REACHA has set up a Cell for Livelihood Enhancement (CLE) at Chinar 9 Jawan Club, Baramulla, J&K. The main objective of CLE is to take up innovative market aligned activities like training of trainers, scholarships for jobs, support to set up Women’s Self Help Groups (SHGs) so that local women may be able to set up sustainable enterprises, etc. and thereby become financially independent.
+
+CLE has had considerable success in the 18 months that it has rolled out on ground.</p>
+                     
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Read more at - <a href="/project/livelihood/legenpact" target="_blank">Cell for Livelihood Enhancement</a>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">REACHA is also supported by GSIF – Genpact Social Impact Fellowship – or the year 2019-20-21. More details about GSIF are available at <a href="https://genpactfellowship.in/" target="_blank">https://genpactfellowship.in/</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Read more about Genpact CSR at <a href="https://www.genpact.com/about-us/corporate-social-responsibility" target="_blank">https://www.genpact.com/about-us/corporate-social-responsibility</a></p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Read about NASSCOM Foundation at <a href="https://nasscomfoundation.org/" target="_blank">https://nasscomfoundation.org/</a></p>
+                  </div>
+                  <div class="col-lg-2 col-md-2">
+                    <img src="/static/images/genpacklogo.jpeg" class="img-fluid">
+                    <img src="/static/images/nasscomlogo.jpeg" class="img-fluid" style="margin-top: 10%;">
+              </div>
+          </div>
+      </section>
+      <section >
+          <div class="container">
+            <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">REC <span style="color:white">FOUNDATION</h1></span></h1>
+              </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+                  <div class="col-lg-8 col-md-8">
+                      
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">REACHA partnered REC Foundation in the year 2018-19-20 for the project – Improving learning outcomes in primary education to 3000 children (studying in govt. schools) through project based learning with focus on multiple reinforcement in Atraulia block of Azamgarh district of Uttar Pradesh.</p>
+                      <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Rural Electrification Corporation Limited (REC), A Govt. of India Navratna Enterprise, committed financial assistance under CSR initiative to REACHA for the project, improving learning outcomes in primary education to 3000 children (studying in govt. schools) through project based learning with focus on multiple reinforcement in Atraulia block of Azamgarh district of Uttar Pradesh through its CSR arm, REC Foundation.
+
+The main objective of the project was to improve access, retention and learning outcomes for children in the age group of 6-14 years so that they receive quality education at elementary level, to enroll and mainstream residual out-of-school children from the disadvantaged and marginalized social groups residing in rural villages and urban slums, to improve retention in schools and lower the dropout rates, to improve teaching quality in schools and to improve learning outcomes as per indicators developed and ensure age-appropriate learning levels through supplementary and remedial coaching.<br><br>
+
+Read more at - <a href="/project/education/rec" target="_blank"><a href="/project/education/rec" target="_blank">REC - Project LEARN</a><br><br>
+Read about REC Foundation <a href="https://www.recindia.nic.in/our-csr-initiatives" target="_blank">(https://www.recindia.nic.in/our-csr-initiatives)</a></a></p> 
+
+                  </div>
+                  <div class="col-lg-2 col-md-2">
+                      <img src="/static/images/reclogo.jpeg"  class="img-fluid" style="border: 0.5px solid black">
+                  </div>
+              </div>
+          </div>
+      </section>
+<section>
+    <div class="container">
+            <div class="row justify-content-center" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">TITAN</h1></span></h1>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="padding-top: 2%;">
+            <div class="col-lg-8 col-md-8">
+                <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Titan Company Limited is launching a program called Design Impact Movement with REACHA as the Primary Partner. This movement seeks to help aspiring innovators amongst the country’s youth reach their potential while also giving back to the society. It intends to inspire young people to take up designing for social impact and help them in the creation of their products for the same, if any. <br><br>
+The Project aims at creating an awareness for and promoting tangible design innovations that solve pressing social issues and provide an ecosystem which connects all the entities in the product design space from the problem source to the public.<br><br>
+Read more at <a href="/project/designimpactmovement" target="_blank">Design Impact Movement</a><br><br>
+Read more about Titan Design Impact Awards at - <a href="https://designimpactawards.in" target="_blank"> https://designimpactawards.in</a></p>
+</div>
+<div class="col-lg-2 col-md-2">
+    <img src="/static/images/titanlogo.jpeg" class="img-fluid" style="padding-bottom: 3%;">
+</div>
+</div>
+</div>
+
+ 
+    
+</section>
+<section style="background: #e6e8e2">
+          <div class="container">
+            <div class="row justify-content-center" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">IBM </h1></span></h1>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="padding-top: 2%;padding-bottom: 2%;">
+            <div class="col-lg-8 col-md-8">
+                <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Coming Soon<br><br>
+    </p>
+    </div>
+    <div class="col-lg-2 col-md-2">
+        <img src="/static/images/ibm.jpeg" class="img-fluid">
+         
+    </div>
+</div>
+
+
+      </div>
+  </section>
+  <section >
+          <div class="container">
+            <div class="row justify-content-center" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">SMARTGAON <span style="color:white">FOUNDATION </h1></span></h1>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="padding-top: 2%;padding-bottom: 2%;">
+            <div class="col-lg-8 col-md-8">
+                <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Coming Soon<br><br>
+    </p>
+    </div>
+    <div class="col-lg-2 col-md-2">
+        <img src="/static/images/SMARTGAON FOUNDATION.jpg" class="img-fluid" style="padding-bottom: 3%;">
+         
+    </div>
+</div>
+
+
+      </div>
+  </section>
+  <section style="background: #e6e8e2">
+          <div class="container">
+            <div class="row justify-content-center" style="padding-top: 3%;" >
+          <div class="col-lg-11 col-md-11" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">INSTITUTIONAL <span style="color:white">PARTNERS </h1></span></h1>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="padding-top: 2%;">
+            <div class="col-lg-8 col-md-8">
+                <p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">1. Manava Bharati India International School,<br>
+    Panchsheel Park (South),<br> 
+    New Delhi – 110 017<br> 
+    India<br> 
+    +91 11 26014515<br>
+                    <a href="http://mbiis.in/" target="_blank">www.manavabharati.in</a><br><br>
+
+    2. Delhi Public School, Amritsar under the Beas Education Society, Amritsar, India<br>
+                    <a href="https://www.dpsasr.com/" target="_blank">www.dpsasr.com</a><br><br>
+
+    3. Durga Dutt Modi Foundation, Delhi<br><br>
+    </p>
+    </div>
+    <div class="col-lg-3 col-md-3">
+        <img src="/static/images/manva.jpeg" class="img-fluid">
+         <img src="/static/images/dps.jpg" style="margin-top: 5%;" class="img-fluid">
+    </div>
+</div>
+
+
+      </div>
+  </section>
+
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" >
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <center>
+        <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+        <p style="text-align:justify;">REACHA, or Research and Extension Association for Conservation Horticulture and Agro-forestry, is a Voluntary Organisation registered under the Societies Registration Act, 1860, within jurisdiction of NCT(National Capital Territory ) of Delhi, India since March 1992.<br><a href="/about">Read More</a></p></center>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="/">Home</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="/covid19">Covid19</a>
+            </p>
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            <p>
+              <a href="/media1">Media Coverage</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>177-178, 2nd Floor, 
+Triveni Apartments, 
+Jhilmil Colony, 
+Delhi 110095 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>nikhil@reacha.org</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 9811447613 </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i>  011-22149730 </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+
+</footer>
+
+
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+      <script src="/static/js/aos.js"></script>
+      <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>
